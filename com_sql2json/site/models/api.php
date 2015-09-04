@@ -21,14 +21,9 @@ class ApiUiModelApi
     {
         $db = JFactory::getDBO();
         $sql = $this->getQueryByApiName($name);
-//        print_r($sql);
         $db->setQuery($sql);
 
-        if(count($db->loadObjectList())>1){
-            $options = $db->loadObjectList();
-        }else{
-            $options = $db->loadObject();
-        }
+        $options = $db->loadObjectList();
 
         return json_encode($options);
     }
