@@ -23,7 +23,13 @@ class ApiUiModelApi
         $sql = $this->getQueryByApiName($name);
 //        print_r($sql);
         $db->setQuery($sql);
-        $options = $db->loadObject();
+
+        if(count($db->loadObjectList())>1){
+            $options = $db->loadObjectList();
+        }else{
+            $options = $db->loadObject();
+        }
+
         return json_encode($options);
     }
 
