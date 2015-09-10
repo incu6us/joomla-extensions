@@ -9,11 +9,6 @@
     <version>1.0.0</version>
     <description>COM_API-UI_DESCRIPTION</description>
 
-	<!-- <languages folder="languages">
-		<language tag="en-GB">en-GB/en-GB.com_sql2json.ini</language>
-		<language tag="en-GB">en-GB/en-GB.com_sql2json.sys.ini</language>
-	</languages> -->
-
 	<install>
 	    <sql>
 	    	<file charset="utf8" driver="mysql">sql/mysql.install.sql</file>
@@ -24,7 +19,7 @@
 	    <!-- <folder>assets</folder> -->
 	    <folder>controllers</folder>
 	    <!-- <folder>helpers</folder> -->
-	    <folder>languages</folder>
+	    <folder>language</folder>
 	    <folder>models</folder>
 	    <folder>tables</folder>
 	    <folder>views</folder>
@@ -34,7 +29,7 @@
     </files>
 
 	<languages folder="site">
-	    <language tag="en-GB">languages/en-GB/en-GB.com_sql2json.ini</language>
+	    <language tag="en-GB">language/en-GB/en-GB.com_sql2json.ini</language>
 	</languages>
 
     <scriptfile>install.php</scriptfile>
@@ -44,7 +39,7 @@
 	    <files folder="admin">
 	        <!-- <folder>controllers</folder> -->
 	        <folder>sql</folder>
-	        <folder>languages</folder>
+	        <folder>language</folder>
 	        <folder>models</folder>
 	        <folder>views</folder>
 	        <filename>sql2json.php</filename>
@@ -53,8 +48,8 @@
 	        <!-- <filename>install.sql</filename> -->
 	    </files>
 	    <languages folder="admin">
-			<language tag="en-GB">languages/en-GB/en-GB.com_sql2json.ini</language>
-			<language tag="en-GB">languages/en-GB/en-GB.com_sql2json.sys.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_sql2json.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_sql2json.sys.ini</language>
 		</languages>
 	</administration>
 </extension>
