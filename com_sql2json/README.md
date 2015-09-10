@@ -29,3 +29,5 @@ View example (sql-query: "select 1+1" for apiname "test"):
   "1+1": "2"
 }
 ```
+
+Joomla Extensions page: http://extensions.joomla.org/extensions/extension/core-enhancements/coding-a-scripts-integration/sql2json
